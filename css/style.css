@@ -14,7 +14,7 @@
 .main-cont{
     display: flex;
     width: 100%;
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
 }
 
 
@@ -23,18 +23,53 @@
     overflow: auto;
 
 
-    background-color: lightcoral;
+    background-color: hsl(0deg 0% 0%);
 }
 
 .screen{
     width: calc(100% - 250px);
     overflow: auto;
 
-    background-color: aquamarine;
+    background-color: hsl(218.57deg 25.93% 10.59%);
+}
+
+.header{
+    height: 90px;
+    background-color: hsl(222deg 38.46% 5.1%);
 }
 
 .footer{
-    height: 100px;
+    height: 80px;
 
-    background-color: black;
+    background-color: hsl(0deg 0% 15.69%);
+}
+
+@media screen and (max-width: 768px){
+    .nav-bar{
+        width: 180px;
+    }
+
+    .screen{
+        width: calc(100% - 180px);
+    }
+}
+
+@media screen and (max-width: 470px){
+    .nav-bar{
+        width: 130px;
+    }
+
+    .screen{
+        width: calc(100% - 130px);
+    }
+}
+
+@media screen and (max-width: 375px){
+    .nav-bar{
+        width: 50px;
+    }
+
+    .screen{
+        width: calc(100% - 50px);
+    }
 }
