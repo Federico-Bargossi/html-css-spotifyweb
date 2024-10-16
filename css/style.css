@@ -4,15 +4,21 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: bold;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
+}
+.img-logo{
+    width: 130px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .nav-bar {
     width: 200px;
     background-color: hsl(0deg 0% 0%);
+    position: relative;
 }
 
 .fa-spotify{
@@ -27,27 +33,67 @@
 }
 
 .cont-nav-list-1{
-    padding-left: 15px;
+    padding: 0 15px;
+}
+
+.cont-nav-list-2{
+    width: 90%;
+    padding: 0 15px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+hr {
+    border: 1;
+    width: 100%;
+    color: hsl(0deg 0% 43.53%);
 }
 
 .nav-list-1 li{
     display: flex;
     align-items: center;
-    gap:5px
+    gap: 5px;
+}
+
+.lol{
+    font-size: 1.2em;
 }
 
 .img-nav{
     width: 25px;
 }
 
+.img-nav2{
+    width: 15px;
+}
+
 .nav-list-1{
     list-style: none;
     color: hsl(222.86deg 2.83% 48.43%);
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 30px;
+    margin-bottom: 15px;
+    
 }
 
-h3{
+.bot-nav{
+    color: hsl(222.86deg 2.83% 48.43%);
+    font-size: 0.8em;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.bot-nav-profile{
+    color: white;
+    display: flex;
+    gap: 10px;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+h3,h4{
     color: white;
 }
 
@@ -73,7 +119,7 @@ p {
 }
 
 .cont {
-    width: 95%;
+    width: 98%;
     max-width: 1100px;
     padding-top: 20px;
     margin: 0 auto;
@@ -134,7 +180,6 @@ p {
     width: calc((100% - 50px) / 6);
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
