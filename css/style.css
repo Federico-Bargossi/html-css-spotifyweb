@@ -15,6 +15,11 @@
     margin-bottom: 10px;
 }
 
+.img-logo-piccolo{
+    width: 23px;
+    display: none;
+}
+
 .nav-bar {
     width: 200px;
     background-color: hsl(0deg 0% 0%);
@@ -242,6 +247,24 @@ p {
 @media screen and (max-width: 425px) {
     .nav-bar {
         width: 50px;
+    }
+
+    .img-logo{
+        display: none;
+    }
+
+    .img-logo-piccolo{
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .nav-list-1 li{
+        padding: 10px 0;
+    }
+
+    .nascosto{
+        display: none;
     }
 
     .screen {
