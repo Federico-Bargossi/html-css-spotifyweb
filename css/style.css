@@ -205,6 +205,36 @@ p {
     align-items: center;
 }
 
+.img-container {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+
+.image1 {
+    opacity: 1;
+}
+
+.image2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.img-container:hover .image2 {
+    z-index: 0;
+}
+
+.img-container:hover .image1{
+    /* filter: blur(10px); 
+    -webkit-filter: blur(10px); */
+    /* background-color: #FFFFFF44;
+    backdrop-filter: blur(8px); */
+    opacity: 0.5;
+}
 
 .song-title {
     color: white;
@@ -320,14 +350,14 @@ p {
 }
 
 .extra-controls {
-    width: 20%;
+    width: 200px;
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
 .volume{
-    width: 100%;
+    width: 100px;
 }
 
 .extra-controls button {
@@ -350,6 +380,14 @@ p {
     .screen {
         width: calc(100% - 180px);
     }
+
+    .extra-controls{
+        width: 180px;
+    }
+
+    .volume{
+        width: 90px;
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -369,6 +407,14 @@ p {
     .like-folder{
         flex-direction: column;
         gap:5px;
+    }
+
+    .extra-controls{
+        width: 150px;
+    }
+
+    .volume{
+        width: 70px;
     }
 }
 
