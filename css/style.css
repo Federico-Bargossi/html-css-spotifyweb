@@ -445,5 +445,12 @@ p {
         width: calc(100% - 50px);
     }
    
+    .like-folder{
+        padding-left: 10px;
+    }
+
+    .player-fun{
+        width: 30%;
+    }
 }
 
