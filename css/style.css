@@ -6,9 +6,20 @@
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+    font-variation-settings:"wdth" 100;
 }
+
+.illumina:hover,
+.nav-list-1 li:hover,
+.top-bar li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.underline:hover{
+    text-decoration: underline;
+}
+
 .img-logo{
     width: 130px;
     margin-top: 10px;
@@ -125,7 +136,6 @@ p {
 
 .cont {
     width: 98%;
-    max-width: 1100px;
     padding-top: 20px;
     margin: 0 auto;
 }
@@ -198,7 +208,7 @@ p {
 
 .song-title {
     color: white;
-    padding: 10px 0;
+    padding: 3px 0;
     line-height: 10px;
     font-size: 0.7em;
     display: inline-block;
@@ -209,13 +219,126 @@ p {
     font-size: 0.6em;
 }
 
+.circle{
+    border-radius: 50%;
+}
+
 .footer {
     height: 80px;
 
     background-color: hsl(0deg 0% 15.69%);
 }
 
-@media screen and (max-width: 890px) {
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+}
+
+.album-cover {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.song-title {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.artist-name {
+    font-size: 0.6em;
+    color: #ccc;
+}
+
+.like-folder{
+    display: flex;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+.player-fun{
+    width: 40%;
+    
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.progress .current-time, .progress .duration {
+    font-size: 0.6em;
+    color: white;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    position: relative;
+}
+
+.progress-fill {
+    width:25%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+}
+
+.extra-controls {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.volume{
+    width: 100%;
+}
+
+.extra-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 878px) {
     .nav-bar {
         width: 180px;
     }
@@ -229,7 +352,7 @@ p {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
     .col{
         width: calc((100% - 20px) / 2);
     }
@@ -242,9 +365,14 @@ p {
         font-size: 0.8rem;
         padding: 6px 25px;
     }
+
+    .like-folder{
+        flex-direction: column;
+        gap:5px;
+    }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 552px) {
     .nav-bar {
         width: 50px;
     }
@@ -270,4 +398,6 @@ p {
     .screen {
         width: calc(100% - 50px);
     }
+   
 }
+
